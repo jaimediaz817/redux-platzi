@@ -21,3 +21,9 @@ ReactDOM.render(
     , 
     document.getElementById('root')
 );
+
+
+/* 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+*/
