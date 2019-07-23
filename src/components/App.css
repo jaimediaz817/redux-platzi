@@ -1,7 +1,40 @@
-
+.logo-container {
+  text-decoration: none;
+}
+u.nav-link.logo-container {
+  border: 1px solid #ffff4f;
+  border-radius: 21px;
+  padding: 0 6px;
+  /* display: flex; */
+  /* align-items: center; */
+  width: auto;
+  margin-right: 2rem;
+}
+u.nav-link.logo-container u{
+  
+}
+.logo-container span{
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 0.4px;
+  padding-left: 1rem;
+}
+.logo-container .icon-logo {
+  color: #ffff4f;
+  padding-left: 0.5rem;
+  font-size: 20px;
+}
+.logo-container i.second{
+  color: rgba(255,255,255,0.75);
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  margin-left: 0.5rem;
+  padding-right: 1rem;
+}
 
 .j-container {
   /*border: 1px solid red;*/
+  margin-top: 2.5rem;
 }
 
 .lds-hourglass {

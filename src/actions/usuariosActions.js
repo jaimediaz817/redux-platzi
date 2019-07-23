@@ -21,9 +21,10 @@ export const traerTodosLosUsuarios = () => async (dispatch) => {
     }
     catch(error) {
         console.error(error);
+        //error.message
         dispatch({
             type: ERROR_REQUEST,
-            payload: error.message
+            payload: 'Error al intentar cargar la lista de usuarios'
         });
     }
 }

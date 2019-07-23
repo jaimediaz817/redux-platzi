@@ -16,8 +16,9 @@ export default (state = INITIAL_STATE, action) => {
         case TRAER_TODOS_LOS_USUARIOS:
             return { 
                 ...state,
-                 usuarios: action.payload,
-                 loading: false
+                usuarios: action.payload,
+                loading: false,
+                error: ''
             }
         case ESTADO_CARGANDO:
             return { 

@@ -2,6 +2,11 @@ import React, {Fragment, Component} from 'react';
 import { connect } from 'react-redux';
 import  * as traerTodos   from '../../actions/usuariosActions';
 import Spinner from '../helpers/Spinner';
+import '@fortawesome/fontawesome-free/css/all.css'
+
+import TablaUsers from './TablaUsers';
+import '../general/Fatal';
+import Fatal from '../general/Fatal';
 
 class Usuarios extends Component {
 
@@ -14,7 +19,9 @@ class Usuarios extends Component {
   }
 
   componentDidMount (){
-    this.props.traerTodosLosUsuarios();
+    if (!this.props.usuarios.length) {
+      this.props.traerTodosLosUsuarios();
+    }    
   }
 
   ponerContenidoTabla = () => {
@@ -25,31 +32,13 @@ class Usuarios extends Component {
       );
     }
 
-    return(
-      <table className="table table-inverse mt-4">
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Website</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        { this.contenidoFilasTabla() }
-      </tbody>
-    </table>
-    );
-  }
+    if (this.props.error) {
+      return <Fatal mensaje={this.props.error} />;
+    }
 
-  contenidoFilasTabla = () => (
-    this.props.usuarios.map((user) => (
-      <tr key={user.id}>
-        <td>{user.name}</td>
-        <td>{user.website}</td>
-        <td>{user.email}</td>
-      </tr>
-    )) 
-  );
+
+    return <TablaUsers />
+  }
 
   render() {
 
@@ -57,6 +46,7 @@ class Usuarios extends Component {
 
     return (
       <div className="j-container container">
+        <h1>Lista de Usuarios</h1>
         { this.ponerContenidoTabla() }
       </div>
     );    
