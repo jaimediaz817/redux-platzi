@@ -103,9 +103,9 @@ class Tareas extends Component {
     render() {
         return (
             <div className="j-container container">
-                <button className="btn btn-primary bg-primary text-light btn-agregar-tarea">
-                    Agregar tarea
+                <button className="btn btn-primary bg-primary text-light btn-agregar-tarea">                    
                     <Link to='/tareas/guardar' className="text-light  w-100 h-100 d-block">                        
+                        Agregar tarea
                     </Link>
                 </button>
                 { this.mostrarContenidoTarea() }
