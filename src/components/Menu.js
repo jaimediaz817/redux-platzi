@@ -23,9 +23,6 @@ const Menu = () => {
                     <li className="nav-item">
                         <Link className="nav-link" to="/tareas">Tareas</Link>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Blog</a>
-                    </li>
                 </ul>
 
                 <ul className="navbar-nav">
