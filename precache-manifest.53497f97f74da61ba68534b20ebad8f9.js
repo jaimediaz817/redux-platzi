@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d30fa5d89dd37bb2b3b068249d23132b",
+    "revision": "04d015150cf44ed589f627a05057583f",
     "url": "/redux-platzi/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/redux-platzi/static/css/2.2c11f90b.chunk.css"
   },
   {
-    "revision": "2b397a421b1a839ceb10",
+    "revision": "6f4024bedc02b8c29a15",
     "url": "/redux-platzi/static/css/main.9094ba12.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/redux-platzi/static/js/2.136d54ef.chunk.js"
   },
   {
-    "revision": "2b397a421b1a839ceb10",
-    "url": "/redux-platzi/static/js/main.347b7205.chunk.js"
+    "revision": "6f4024bedc02b8c29a15",
+    "url": "/redux-platzi/static/js/main.1a4047f4.chunk.js"
   },
   {
     "revision": "b56a9e7365ca36400773",
